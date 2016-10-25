@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "About me"
 description: "来，一起舞动青春"
 header-img: "img/plane.jpg"
 ---
