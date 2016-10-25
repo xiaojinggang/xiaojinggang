@@ -1,3 +1,11 @@
+---
+layout: post
+title: gitlab客户端的操作
+categories: [blog ]
+tags: [Film, Talk, ]
+description: 对于初学者的使用流程图
+---
+
 # gitlab客户端的操作文档
 
 > 首先，你已经搭建好了gitlab，并为每个开发人员配备了单独的登陆账号。
