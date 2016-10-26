@@ -5,7 +5,9 @@ description: "西流河"
 header-img: "img/autumn.jpg"
 ---
 
-<center>I hope this is  the way to the road of hope
+## 「I hope this is  the way to the road of hope.」
+
+<center>
     <p><img src="http://p1.bpimg.com/567571/618c8b3948cc81c5.png" align="center"></p>
 </center>
 
