@@ -6,7 +6,7 @@ header-img: "img/plane.jpg"
 ---
 
 <center>
-    <p><img src="" align="center"></p>
+    <p><img src="http://p1.bpimg.com/4851/4cc113ad7fbcb2d8.jpg" align="center"></p>
 </center>
 
 Ehhhh...I believe this is the way to the road of hope...
