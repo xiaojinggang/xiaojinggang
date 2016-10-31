@@ -8,7 +8,7 @@ description: 测试环境的添加
 
 # #前言
 
-由于公司的业务扩张，领导以购买2台服务器，并打算将云上的一台web服务转移到传统的实体机上。于是乎，我将环境在测试机上搭建了2遍，确认无误后，编辑成文档。
+由于公司的业务扩张，领导已购买2台服务器，并打算将云上的一台web服务转移到传统的实体机上。于是乎，我将环境在测试机上搭建了2遍，确认无误后，编辑成文档。
 在这里我将lnmp的搭建流程和搭建中遇到的故障做进一步的说明。
 这里，我将是在一台全新的测试环境上搭建。
 
@@ -18,7 +18,8 @@ description: 测试环境的添加
 * 2、	软件安装目录：/app/soft/
 * 3、	项目存放目录：/app/www/
 * 4、	启动路径：
-	- a)	mysql：/etc/init.d/mysqld {start|stop|restart}
+
+	- a)	mysql：/etc/init.d/mysqld {start |stop| restart}
     - b)	php：/app/soft/php5.6.16/sbin/php-fpm
     - c)	nginx：/app/soft/nginx/sbin/nginx -t && /app/soft/nginx/sbin/nginx -s reload
   
@@ -190,7 +191,7 @@ lsof -i :9000
 ## 此处需要提出我在安装的时候遇见的问题：
 
 当安装插件 libiconv-devel的时候
-出现如下错误：
+出现如下错误：  ##在以上的安装流程中，该问题已得到解决。
 ![](http://7xrn7f.com1.z0.glb.clouddn.com/16-10-31/21295374.jpg)
 
 解决方案：
