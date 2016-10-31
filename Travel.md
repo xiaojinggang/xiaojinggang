@@ -7,4 +7,4 @@ header-img: "img/plane2.jpg"
 
 
 
-我的 [蝉游记](http://chanyouji.com/users/448398)
+我的 [girl_friend](http://1130804929.qzone.qq.com)
