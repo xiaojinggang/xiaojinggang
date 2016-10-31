@@ -19,13 +19,10 @@ description: 测试环境的添加
 * 3、	项目存放目录：/app/www/
 * 4、	启动路径：
 
+  - mysql：/etc/init.d/mysqld start/stop/restart;
+  - php：/app/soft/php5.6.16/sbin/php-fpm
+  - nginx：/app/soft/nginx/sbin/nginx -t && /app/soft/nginx/sbin/nginx -s reload
 
->mysql：/etc/init.d/mysqld start (|stop|restart)
-
->php：/app/soft/php5.6.16/sbin/php-fpm
-
->nginx：/app/soft/nginx/sbin/nginx -t && /app/soft/nginx/sbin/nginx -s reload
-  
 <pre>
 mkdir -p /app/tool/
 mkdir -p /app/soft/
