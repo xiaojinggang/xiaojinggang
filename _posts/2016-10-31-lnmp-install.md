@@ -20,7 +20,7 @@ description: 测试环境的添加
 * 4、	启动路径：
 
 >
-  - a) mysql：/etc/init.d/mysqld {start |stop| restart}
+  - a) mysql：/etc/init.d/mysqld start (|stop|restart)
   - b) php：/app/soft/php5.6.16/sbin/php-fpm
   - c) nginx：/app/soft/nginx/sbin/nginx -t && /app/soft/nginx/sbin/nginx -s reload
   
