@@ -6,5 +6,4 @@ header-img: "img/plane2.jpg"
 ---
 
 
-
-我的 [girl_friend](http://1130804929.qzone.qq.com)
+[动次打次](http://user.qzone.qq.com/872080345)
