@@ -8,8 +8,11 @@ header-img: "img/plane.jpg"
 ##### 自我描述：
 
 i am 烈火小精钢.
+
 you can call me 小精钢......
+
 ♂
+
 18
 
 > 来，靠近我，聆听我的心声！！！
