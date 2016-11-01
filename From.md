@@ -12,7 +12,7 @@ header-img: "img/autumn.jpg"
 </center>
 
 
-总有一个地方，让你魂牵梦绕；总有一个地方，承载着你最初的梦想；总有一个地方，能让你回头遥望；就是这个地方，刻画着你儿时的[欢笑](http://p1.bqimg.com/567571/13d28361e5aa2ce1.jpg)。。。
+总有一个地方，让你魂牵梦绕；总有一个地方，承载着你最初的梦想；总有一个地方，能让你回头遥望；就是这个地方，刻画着你儿时的[欢笑](http://p1.bpimg.com/567571/f22cb3f782b0d252.gif)。。。
 
 > I can well remember that there was a time when a deep blue sky,the song of the birds,moonlight and flowers could never have kept me spellbind.
 
