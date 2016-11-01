@@ -6,4 +6,4 @@ header-img: "img/plane2.jpg"
 ---
 
 
-[动次打次](http://user.qzone.qq.com/872080345)
+[动次打次]()
