@@ -241,6 +241,8 @@ show slave status\G;
 </pre>
 
 > now 童鞋们  数据同步完成啦。
+> give me kiss
+
 
 
 
