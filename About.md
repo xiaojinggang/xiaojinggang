@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "About me"
-description: "来，一起舞动青春"
+description: "喧嚣的城市，宁静的生活"
 header-img: "img/plane.jpg"
 ---
 
-##### 自我描述：
+#### Is Me：
 
 i am 烈火小精钢.
 
@@ -15,7 +15,7 @@ you can call me 小精钢......
 
 18
 
-> 来，靠近我，聆听我的心声！！！
+> 来呀，造作呀，反正有~大把时光！！！
 
 <center>
     <p><img src="http://p1.bpimg.com/4851/4cc113ad7fbcb2d8.jpg" align="center"></p>
