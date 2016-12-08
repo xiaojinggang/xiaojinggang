@@ -1,6 +1,5 @@
-# Microdust 微尘
-
-This is a blog created by Azeril. The blog is live at [azeril.me](http://azeril.me/).
+# Microdust 星辰大海
+This is a blog created by Azeril. The blog is live at [xiaojinggang](http://xiaojinggang.github.io/).
 
 ## Thanks
 
