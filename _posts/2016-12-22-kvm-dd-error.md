@@ -1,10 +1,11 @@
 ---
 layout: post
-title: dd: 打开"/dev/cdrom" 失败: 找不到介质
+title: dd;打开"/dev/cdrom" 失败;找不到介质
 categories: [blog ]
 tags: [Film, Talk, ]
-description: 虚拟机的测试使用故障
----	   
+description: 对于初学者的使用流程图
+--- 
+
 
 # #前言：最近在做kvm虚拟化，在制作过程中因为疏忽遇见个小问题，特拿出来警醒自己。
 
