@@ -37,7 +37,14 @@ python3不存在长整型，变为整型，需要注意：
 
 ## #布尔值
 
+1或者0 
+
 ## #查看数据类型
+
+<pre>
+type("xiaojinggang")
+str
+</pre>
 
 
 
