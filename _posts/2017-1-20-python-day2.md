@@ -226,24 +226,3 @@ for k,v in info.items(): #会先把dict转成list,数据里大时莫用
     print(k,v)
 </pre>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
