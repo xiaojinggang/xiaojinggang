@@ -226,3 +226,170 @@ for k,v in info.items(): #会先把dict转成list,数据里大时莫用
     print(k,v)
 </pre>
 
+## 完整的三级菜单代码：
+
+
+<pre>
+##低端版本，通过多次循环进行选择。存在漏洞。代码有重复。重复次数与菜单的层次有关。
+# Author:he li# Author:he li
+# 三级菜单的编辑
+
+item = {
+    "主食":{
+        "大米":{
+            "米饭":{},
+            "米粥":{},
+        },
+        "面粉":{
+            "馒头":{},
+            "烧饼":{},
+        },
+    },
+
+    "饮品":{
+        "碳酸":{
+            "可乐":{},
+            "雪碧":{},
+        },
+        "果汁":{
+            "果粒橙":{},
+            "汇源":{},
+        },
+    },
+}
+
+
+while True:
+    for key in item:
+        print(key)
+    choose = input(">>:").strip()
+    if len(choose) == 0 :continue
+    if choose == "b":break
+    if choose == "q":exit()
+    if choose not in item:continue
+
+    while True:
+        for key2 in item[choose]:
+            print(key2)
+        choose2 = input(">>:").strip()
+        if len(choose2) == 0 :continue
+        if choose2 == "b":break
+        if choose2 == "q":exit()
+        if choose2 not in item[choose]:continue
+
+        while True:
+            for key3 in item[choose][choose2]:
+                print(key3)
+            choose3 = input(">>:").strip()
+            if len(choose3) == 0 :continue
+            if choose3 == "b":break
+            if choose3 == "q":exit()
+            if choose3 not in item[choose][choose2]:continue
+</pre>
+
+<pre>
+##优化后的代码，不会受菜单的层次数的影响。
+# Author:he li
+# 三级菜单的编辑，根据选择，进入到下一级打印菜单并能进行选择。
+
+item = {
+    "主食":{
+        "大米":{
+            "米饭":{},
+            "米粥":{},
+        },
+        "面粉":{
+            "馒头":{},
+            "烧饼":{},
+        },
+    },
+
+    "饮品":{
+        "碳酸":{
+            "可乐":{},
+            "雪碧":{},
+        },
+        "果汁":{
+            "果粒橙":{},
+            "汇源":{},
+        },
+    },
+}
+
+current_level = item
+upper_level = []
+
+while True:
+    for key in current_level:
+        print(key)
+    choose = input(">>:").strip()
+    if len(choose) == 0 :continue
+    if choose == "q" : break
+    if choose == "b":
+        if len(upper_level) == 0 :break
+        current_level = upper_level[-1]
+        upper_level.pop()
+    if choose not in current_level :continue
+    upper_level.append(current_level)
+    current_level = current_level[choose]
+
+</pre>
+
+
+##　针对列表的学历案例：
+<pre>
+##购物车：
+# Author:he li
+# 作业需求：
+#    1、启动程序后，让用户输入工资，然后打印商品列表
+#    2、允许用户更具商品编号购买商品
+#    3、用户选择商品后，检测余额是否够用，够用就直接扣款，不够就提醒
+#    4、可随时退出，退出时打印已购买商品和余额
+
+
+salary=int(input("your salary in a month:"))
+
+product=[
+    ["iphone7",5500],
+    ["pad",3000],
+    ["bike",1500],
+    ["cup",200],
+    ["book",30],
+]
+shooping_car=[]
+while True:
+    for index,i in enumerate(product):
+        print("%s: \t%s \t%s" %(index,i[0],i[1]))
+
+    choose = input("输入你想要的商品的序号：")
+    if choose.isdigit():
+        choose=int(choose)
+        if choose < len(product) and choose>=0:
+            product_item=product[choose]   #购买的商品信息
+            if salary > product_item[1]:  #商品买得起
+                salary-=product_item[1]   #余额数
+                shooping_car.append(product_item)   #追加到购物车
+                print("\033[32;1m%s\033[0m 已加入到您的购物车，\
+您的余额为：\033[32;1m%s\033[0m" %(product_item[0],salary))
+            else:
+                print("\033[31;1msorry\033[0m,您的余额不足，\
+购买此商品还需要",product_item[1]-salary)
+
+        else:
+            print("\033[31;1msorry,没有您选择的商品！\033[0m")
+    elif choose == "exit":
+        total_cost = 0
+        print("您当前购买的商品列表：")
+        for j in shooping_car:
+            print(j)
+            total_cost +=j[1]
+
+        print("您一共消费了:", total_cost)
+        print("您当前余额为：",salary)
+        break
+
+    else:
+        print("请输入正确的商品编号或输入exit退出")
+
+
+</pre>
