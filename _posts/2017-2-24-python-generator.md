@@ -28,53 +28,53 @@ description: Python路
 
   如果要一个一个打印出来，可以通过next()函数获得generator的下一个返回值：
 
-<pre>
->>> next(g)
-0
->>> next(g)
-1
->>> next(g)
-4
->>> next(g)
-9
->>> next(g)
-16
->>> next(g)
-25
->>> next(g)
-36
->>> next(g)
-49
->>> next(g)
-64
->>> next(g)
-81
->>> next(g)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-StopIteration
-</pre>
+
+	>>> next(g)
+	0
+	>>> next(g)
+	1
+	>>> next(g)
+	4
+	>>> next(g)
+	9
+	>>> next(g)
+	16
+	>>> next(g)
+	25
+	>>> next(g)
+	36
+	>>> next(g)
+	49
+	>>> next(g)
+	64
+	>>> next(g)
+	81
+	>>> next(g)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	StopIteration
+
 
   generator保存的是算法，每次调用next(g)，就计算出g的下一个元素的值，知道计算到最后一个元素，没有更多的元素时，抛出StopIteration的错误。
 
   当然，上面这种不断调用next(g)实在是太变态了，正确的方法是使用for循环，因为generator也是可迭代对象：
 
-<pre>
->>> g = (x * x for x in range(10))
->>> for n in g:
-...     print(n)
-...
-0
-1
-4
-9
-16
-25
-36
-49
-64
-81
-</pre>
+
+	>>> g = (x * x for x in range(10))
+	>>> for n in g:
+	...     print(n)
+	...
+	0
+	1
+	4
+	9
+	16
+	25
+	36
+	49
+	64
+	81
+
 
   所以创建了一个generator后，基本上永远不会调用next()，而是通通过for循环来迭代它，并且不需要关心stopIteration的错误。
 
@@ -86,15 +86,15 @@ StopIteration
 
   裴波拉契数列用列表生成是写不出来，但是，用函数把它打印出来去很容易：
 
-<pre>
-def fib(max):
-    n, a, b = 0, 0, 1
-    while n < max:
-        print(b)
-        a, b = b, a + b
-        n = n + 1
-    return 'done'
-</pre>
+
+	def fib(max):
+	    n, a, b = 0, 0, 1
+	    while n < max:
+	        print(b)
+	        a, b = b, a + b
+	        n = n + 1
+	    return 'done'
+
 
   注意赋值语句：
 
@@ -102,49 +102,49 @@ def fib(max):
 
   相当于：
 
-<pre>
-t = (b, a + b) # t是一个tuple
-a = t[0]
-b = t[1]
-</pre>
+
+	t = (b, a + b) # t是一个tuple
+	a = t[0]
+	b = t[1]
+
 
 但不必显示出临时变量t就可以赋值。
 
 上面的函数可以输出裴波拉契数列的前N个数：
 
-<pre>
->>> fib(10)
-1
-1
-2
-3
-5
-8
-13
-21
-34
-55
-done
-</pre>
+
+	>>> fib(10)
+	1
+	1
+	2
+	3
+	5
+	8
+	13
+	21
+	34
+	55
+	done
+
 
   仔细观察，可以看出，fib函数实际上是定义了裴波拉契数列的推算规则，可以从第一个元素开始，推算出后续任意的元素，这种逻辑其实非常类似generator。
 
   也就是说，上面的函数和generator仅一步之遥。要把fib函数变成generator，只需要把print(b)改为yield b 就可以了：
 
-<pre>
-def fib(max):
-def fib(max):
-    n,a,b = 0,0,1
 
-    while n < max:
-        #print(b)
-        yield  b
-        a,b = b,a+b
+	def fib(max):
+	def fib(max):
+	    n,a,b = 0,0,1
+	
+	    while n < max:
+	        #print(b)
+	        yield  b
+	        a,b = b,a+b
+	
+	        n += 1
+	
+	    return 'done' 
 
-        n += 1
-
-    return 'done' 
-</pre>
 
   这就是定义generator的另一种方法。如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator：
 
