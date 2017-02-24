@@ -12,14 +12,15 @@ description: Python路
 
   所以，若果列表元素可以按照某种算法推算出来，那我们是否可以再循环的过程中不断腿粗安出后续的元素呢？这样就不必创建完整的list，从而节省大量的空间。在Python中，这种一边循环一边计算的机制，称为生成器：generator。
 
-<pre>
->>> L = [x * x for x in range(10)]
->>> L
-[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
->>> g = (x * x for x in range(10))
->>> g
-<generator object <genexpr> at 0x1022ef630>
-</pre>
+
+    >>> L = [x * x for x in range(10)]
+	>>> L
+	[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+	>>> g = (x * x for x in range(10))
+	>>> g
+	<generator object <genexpr> at 0x1022ef630>
+
+
 
   创建L和g的区别仅在于最外层的[]和()，L是一个list，而g是一个generator。
 
