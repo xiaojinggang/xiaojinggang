@@ -15,15 +15,15 @@ you can call me 小精钢......
 
 18
 
-> 来呀，造作呀，反正有~大把[时光]()！！！
+> 来呀，造作呀，反正有~大把时光！！！
 
 <center>
     <p><img src="http://p1.bpimg.com/4851/4cc113ad7fbcb2d8.jpg" align="center"></p>
 </center>
 
-Ehhhh...I believe this is the path to dream...
+Ehhhh...I believe this is the path to [dream](http://i1.piimg.com/588926/2d718e463f87f1bb.png)...
 
-在忙碌中经常会回想起冰棒汽水的味道，和那些无所事事一整个夏天的[年少](http://i1.piimg.com/588926/2d718e463f87f1bb.png)。
+在忙碌中经常会回想起冰棒汽水的味道，和那些无所事事一整个夏天的年少。
 
 ——小精钢
 
