@@ -15,7 +15,7 @@ you can call me 小精钢......
 
 18
 
-> 来呀，造作呀，反正有~大把[时光](http://i1.piimg.com/588926/545c84714af51698.jpg)！！！
+> 来呀，造作呀，反正有~大把[时光](http://i1.piimg.com/588926/2d718e463f87f1bb.png)！！！
 
 <center>
     <p><img src="http://p1.bpimg.com/4851/4cc113ad7fbcb2d8.jpg" align="center"></p>
