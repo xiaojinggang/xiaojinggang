@@ -18,7 +18,7 @@ you can call me 小精钢......
 > 来呀，造作呀，反正有~大把时光！！！
 
 <center>
-    <p><img src="http://p1.bpimg.com/4851/4cc113ad7fbcb2d8.jpg" align="center"></p>
+    <p><img src="https://ooo.0o0.ooo/2017/06/16/594342de7412a.jpg" align="center"></p>
 </center>
 
 Ehhhh...I believe this is the path to [dream](http://i1.piimg.com/588926/2d718e463f87f1bb.png)...
